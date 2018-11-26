@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function primeNum(Num)
+    {
+        if (Num == '2')  return 1;
+        else
+        {
+            for (let i=2 ; i<Num; i++)
+            {
+                if (Num%i == '0') return 0;
+            }
+            return 1;
+        }
+    }
+    function displayPrimeNum(max) {
+        for (let i = 2; i<max; i++)
+        {
+            let result = primeNum(i);
+            if (result)  document.write(i + '<br>');
+        }
+    }
+    displayPrimeNum(1000);
+</script>
+</body>
+</html>
